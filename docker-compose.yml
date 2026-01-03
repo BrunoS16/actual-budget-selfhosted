@@ -1,0 +1,9 @@
+﻿services:
+  actual_server:
+    image: actualbudget/actual-server:latest
+    container_name: actual_budget
+    ports:
+      - '5006:5006'
+    volumes:
+      - C:\Actual_Budget\actual-data:/data
+    restart: unless-stopped
